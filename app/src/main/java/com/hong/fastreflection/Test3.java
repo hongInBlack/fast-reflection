@@ -8,14 +8,11 @@ import com.hong.fastreflection.annotation.FastReflectionTag;
  * @description
  * @date 2019/12/27
  */
-public class Test {
+public class Test3 extends Test2 {
 
     @FastReflectionTag
-    public void doTest() {
+    public void do3Test() {
     }
-    @FastReflectionTag
-    public String doTest2() {
-        return "doTest2";
-    }
+
 
 }

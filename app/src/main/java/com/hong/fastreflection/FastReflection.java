@@ -23,18 +23,18 @@ public class FastReflection {
         }
         return instance;
     }
-
-    public Object newObj(String clazz, List<Object> args) {
-        return reflectionImp.newObj(clazz, args);
-    }
+//
+//    public Object newObj(String clazz, List<Object> args) {
+//        return reflectionImp.newObj(clazz, args);
+//    }
 
 
     public Object invoke(Object obj, String method, List<Object> args) {
         return reflectionImp.invoke(obj, method, args);
     }
 
-    public Object getField(Object obj, String fieldName) {
-        return reflectionImp.getField(obj, fieldName);
-    }
+//    public Object getField(Object obj, String fieldName) {
+//        return reflectionImp.getField(obj, fieldName);
+//    }
 
 }

@@ -1,9 +1,9 @@
 package com.hong.fastreflection.annotation;
 
-        import java.lang.annotation.ElementType;
-        import java.lang.annotation.Retention;
-        import java.lang.annotation.RetentionPolicy;
-        import java.lang.annotation.Target;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
 /**
  * @author hong
@@ -12,6 +12,6 @@ package com.hong.fastreflection.annotation;
  * @date 2019/12/27
  */
 @Retention(RetentionPolicy.CLASS)
-@Target(ElementType.TYPE)
+@Target(ElementType.METHOD)
 public @interface FastReflectionTag {
 }

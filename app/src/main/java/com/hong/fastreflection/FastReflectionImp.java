@@ -1,6 +1,5 @@
 package com.hong.fastreflection;
 
-import java.lang.reflect.Field;
 import java.util.List;
 
 /**
@@ -11,30 +10,23 @@ import java.util.List;
  */
 public class FastReflectionImp {
 
-    public Object newObj(String clazz, List<Object> args) {
-        return null;
-    }
 
     public Object invoke(Object obj, String method, List<Object> args) {
-        return null;
-    }
-
-    public Object getField(Object obj, String fieldName) {
-        String name = obj.getClass().getName();
-        if ("sdfsd".equals(obj.getClass().getName())) {
-            switch (fieldName) {
-                case "a":
-                    return obj.a;
-                case "b":
-                    return obj.b;
+        if (obj.getClass().getTypeName().equals("clazz")) {
+            if (method.equals("doTest")
+                    && args.size() == 2
+                    && args.get(0) instanceof java.lang.String
+                    && args.get(1).getClass().getTypeName().equals("string")
+            ) {
+                return ((Test3) obj).do2Test2((String) (args.get(0)), (String) (args.get(1)));
+            }
+            if (method.equals("do3Test")
+                    && args.size() == 0
+            ) {
+                ((Test3) obj).do3Test();
+                return null;
             }
             return null;
-        }
-
-        Field[] declaredFields = obj.getClass().getDeclaredFields();
-        for (Field field : declaredFields) {
-            field.get()
-            field.getName()
         }
         return null;
     }
