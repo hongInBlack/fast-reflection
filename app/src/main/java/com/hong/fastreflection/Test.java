@@ -10,10 +10,8 @@ import com.hong.fastreflection.annotation.FastReflectionTag;
  */
 public class Test {
 
-    @FastReflectionTag
     public void doTest() {
     }
-    @FastReflectionTag
     public String doTest2() {
         return "doTest2";
     }

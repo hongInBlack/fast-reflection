@@ -10,7 +10,6 @@ import com.hong.fastreflection.annotation.FastReflectionTag;
  */
 public class Test3 extends Test2 {
 
-    @FastReflectionTag
     public void do3Test() {
     }
 

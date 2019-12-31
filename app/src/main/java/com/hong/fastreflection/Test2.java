@@ -10,11 +10,9 @@ import com.hong.fastreflection.annotation.FastReflectionTag;
  */
 public class Test2 {
 
-    @FastReflectionTag
     public void do2Test() {
     }
 
-    @FastReflectionTag
     public String do2Test2(String str) {
         return "do2Test2";
     }

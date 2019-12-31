@@ -1,2 +1,2 @@
-include ':app', ':annotation', ':processor'
+include ':app', ':annotation', ':processor', ':hlib'
 rootProject.name='fast-reflection'
